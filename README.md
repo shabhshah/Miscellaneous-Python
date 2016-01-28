@@ -3,7 +3,7 @@ Miscellaneous Python programs I have written. Either working or a work in progre
 
 *blackjack.py* is a work in progress of a Black Jack game.
 
-*HelloWorld.py* is my first Python program, prints "Hello, World!"
+*HelloWorld.py* is the first Python program I wrote, prints "Hello, World!"
 
 *madlib.py* and *madlib2.py* are two MadLib programs.
 
