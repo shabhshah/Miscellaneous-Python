@@ -87,6 +87,8 @@ def gold_room():
                 #this sets the variable next to whatever the user inputs                
                 next = int(raw_input("> "))
 
+#This if statement does not take into account what happens when the user inputs 100- it will continue to loop forever
+
                 #this lets the program continue to the next stage if the input is correct
                 if next < 100:
                                 print "You were not greedy!"
