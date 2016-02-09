@@ -13,6 +13,8 @@ Miscellaneous Python programs I have written. Either working or a work in progre
 
 *rock.py* is a working Rock, Paper, Scissors game.
 
+*someprogram.py* is an assessment for my programming class.
+
 *test.py* prints "Sweg".
 
 *test1.py* prints "This is a test..."
