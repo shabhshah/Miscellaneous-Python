@@ -1,8 +1,6 @@
 # Miscellaneous-Python
 Miscellaneous Python programs I have written. Either working or a work in progress. Some have been written for my programming class.
 
-*blackjack.py* is a work in progress of a Black Jack game.
-
 *HelloWorld.py* is the first Python program I wrote, prints "Hello, World!"
 
 *madlib.py* and *madlib2.py* are two MadLib programs.
