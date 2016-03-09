@@ -5,9 +5,8 @@
 #imports
 import smtplib
 import sys
-import getpass
 import time
-from progressbar import ProgressBar, Percentage, Bar
+from progressbar import ProgressBar
 
 #functions
 def blankLine():
@@ -18,7 +17,7 @@ def wait(x):
 	
 # Credentials
 username = raw_input("Enter username: ")
-password = getpass.getpass("Enter password: ")
+password = raw_input("Enter password: ")
 
 #setting variables
 fromaddr = str(username) + "@gmail.com"
@@ -46,20 +45,18 @@ if carrier == 4:
 if carrier == 5:
 	carrier_attack = "@mms.cricketwireless.net"
 
-toaddrs = "1" + str(number) + str(carrier_attack)
+toaddrs = str(number) + str(carrier_attack)
 print str(toaddrs)
 
 # The actual mail send
-pbar = ProgressBar(widgets=[Percentage(), Bar()], maxval = int(times)).start()
-for i in range(int(times)):
+pbar = ProgressBar()
+for i in pbar(xrange(int(times))):
 	server = smtplib.SMTP('smtp.gmail.com:587')
 	server.starttls()
 	server.login(username,password)
 	server.sendmail(fromaddr, toaddrs, msg)
 	server.quit()
-	pbar.update(i+1)
 	currenttime +=1
-pbar.finish()
 print "Done"
 wait(1)
 print "Goodbye"
