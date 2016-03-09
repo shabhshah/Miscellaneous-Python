@@ -36,14 +36,16 @@ carrier = input("Enter carrier number here: ")
 
 if carrier == 1:
 	carrier_attack = "@txt.att.net"
-if carrier == 2:
+elif carrier == 2:
 	carrier_attack = "@messaging.sprintpcs.com"
-if carrier == 3:
+elif carrier == 3:
 	carrier_attack = "@tmomail.net"
-if carrier == 4:
+elif carrier == 4:
 	carrier_attack = "@vtext.com"
-if carrier == 5:
+elif carrier == 5:
 	carrier_attack = "@mms.cricketwireless.net"
+else:
+	carrier_attack = "you done fucked up kid"
 
 toaddrs = str(number) + str(carrier_attack)
 print str(toaddrs)
