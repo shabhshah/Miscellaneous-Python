@@ -7,10 +7,7 @@ import smtplib
 import sys
 import getpass
 import time
-from progressbar import AnimatedMarker, Bar, BouncingBar, Counter, ETA, \
-    FileTransferSpeed, FormatLabel, Percentage, \
-    ProgressBar, ReverseBar, RotatingMarker, \
-    SimpleProgress, Timer
+from progressbar import ProgressBar, Percentage, Bar
 
 #functions
 def blankLine():
