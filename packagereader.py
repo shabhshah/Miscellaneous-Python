@@ -7,7 +7,6 @@ fh.write("sudo apt-get install ")
 
 for line in open("packages.txt"):
     line = line.strip()
-
     parts = line.split()
 
     importantPart = parts[0]
